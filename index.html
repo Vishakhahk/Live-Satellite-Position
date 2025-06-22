@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SatTrack - Real-Time Satellite Tracker
+    <link rel="icon" href="https://icons.iconarchive.com/icons/aha-soft/large-weather/512/Satellite-icon.png" />
+  </title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+  <div class="header">
+    <h1>🛰️ SatTrack</h1>
+    <p>Live Satellite Position Tracker</p>
+  </div>
+
+  <div id="map"></div>
+
+  <div class="info">
+    <label for="satelliteSelect">Choose Satellite: </label>
+    <select id="satelliteSelect"></select>
+    <p>🛰️ Satellite: <span id="satelliteName">ISS</span></p>
+    <p>Latitude: <span id="lat">--</span></p>
+    <p>Longitude: <span id="lon">--</span></p>
+    <p>Speed: <span id="speed">--</span></p>
+    <p>Altitude: <span id="altitude">--</span></p>
+    <p>Last Updated: <span id="time">--</span></p>
+    <p id="alert" style="color: #ff4c4c; font-weight: bold;"></p>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
